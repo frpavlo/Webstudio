@@ -4,6 +4,34 @@
     --add-color:#757575;
     --back-color:#2F303A;
 }
+.logo {
+    font-family: Raleway, serif;
+    font-weight: 700;
+}
+.nav-link,.header-contacts-link {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+}
+.main-title {
+    font-family: Roboto, sans-serif;
+    font-weight: 900;
+}
+.main-button {
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+}
+.main-traits-title,.work-title,.team-title,.hero-main-title {
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+}
+.main-traits-text,.team-speciality,.address-item,.hero-main-type {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+}
+.hero-sort-button {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+}
 .hero {
     background-color: var(--back-color);
 }
