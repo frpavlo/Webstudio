@@ -49,8 +49,15 @@ img {
 body {
   font-family: Roboto, sans-serif;
 }
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 1200px;
+}
 .hero-studio {
+  padding: 200px 0;
   background-color: var(--back-color);
+  
 }
 .list {
   list-style: none;
@@ -60,6 +67,10 @@ body {
 }
 .address {
   font-style: normal;
+}
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .accent-logo {
   color: var(--accent-color);
@@ -95,6 +106,7 @@ body {
   color: var(--add-color);
 }
 .main-title {
+  margin-bottom: 30px;
   font-weight: 900;
   color: #fff;
   text-align: center;
@@ -104,6 +116,9 @@ body {
   text-transform: uppercase;
 }
 .main-button {
+  padding: 10px 32px;
+  border-color: transparent;
+  border-radius: 4px;
   font-family: inherit;
   color: #fff;
   background-color: var(--accent-color);
@@ -111,6 +126,12 @@ body {
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.96px;
+}
+.main-button:hover, .main-button:focus {
+  cursor: pointer;
+}
+.main-traits {
+  margin: 94px 0;
 }
 .main-traits-title {
   font-size: 14px;
@@ -122,21 +143,37 @@ body {
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
+.work {
+  margin-bottom: 94px;
+}
+.team {
+  padding: 94px 0;
+  background-color: #F5F4FA;
+}
 .work-title,
 .team-title {
+  margin-bottom: 50px;
   text-align: center;
   font-size: 36px;
   letter-spacing: 1.08px;
 }
 .team-worker {
+  margin-top: 30px;
   color: var(--main-color);
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.48px;
 }
 .team-speciality {
+  margin-top: 10px;
   font-size: 16px;
   letter-spacing: 0.48px;
+}
+.address-item:nth-child(1) {
+  margin-top: 20px;
+}
+.address-item:nth-child(n+2) {
+  margin-top: 9px;
 }
 .address-map-link {
   color: #fff;
@@ -152,19 +189,24 @@ body {
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
+.hero-portfolio {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
 .main-traits-title,
 .work-title,
 .team-title,
-.hero-proj-title {
+.hero-project-title {
   color: var(--main-color);
 }
 .main-traits-text,
 .team-speciality,
 .address-contacts-link,
-.hero-proj-type {
+.hero-project-type {
   color: var(--add-color);
 }
 .hero-sort-button {
+  margin-bottom: 50px;
   font-family: inherit;
   font-weight: 500;
   color: var(--main-color);
@@ -173,19 +215,27 @@ body {
   line-height: 1.62;
   letter-spacing: 0.48px;
 }
-.hero-sort-button:hover {
+.hero-sort-button:hover, .hero-sort-button:focus {
   color: #fff;
   background-color: var(--accent-color);
+  cursor: pointer;
 }
-.hero-proj-title {
+.hero-project-item {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+.hero-project-title {
+  margin-top: 20px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 1.08px;
 }
-.hero-proj-type {
+.hero-project-type {
+  margin-bottom: 20px;
   line-height: 1.87;
   letter-spacing: 0.48px;
 }
-footer {
+.footer {
+  padding: 60px 0;
   background-color: var(--back-color);
 }
