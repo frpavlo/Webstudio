@@ -72,10 +72,15 @@ body {
   padding-top: 24px;
   padding-bottom: 25px;
 }
+.header-container {
+  display: flex;
+  align-items: center;
+}
 .accent-logo {
   color: var(--accent-color);
 }
 .logo {
+  margin-right: 93px;
   color: #000;
   font-family: Raleway, serif;
   font-size: 26px;
@@ -85,6 +90,10 @@ body {
 
 .logo-footer {
   color: #fff;
+}
+.nav-list {
+  display: flex;
+  gap: 50px;
 }
 .nav-link,
 .header-contacts-link {
@@ -102,6 +111,11 @@ body {
 .nav-link {
   color: var(--main-color);
 }
+.contacts-list {
+  margin-left: auto;
+  display: flex;
+  gap: 50px;
+}
 .header-contacts-link {
   color: var(--add-color);
 }
@@ -116,6 +130,8 @@ body {
   text-transform: uppercase;
 }
 .main-button {
+  display: block;
+  margin: 0 auto;
   padding: 10px 32px;
   border-color: transparent;
   border-radius: 4px;
@@ -133,7 +149,15 @@ body {
 .main-traits {
   margin: 94px 0;
 }
+.traits-hidden-title {
+  display: none;
+}
+.main-traits-list {
+  display: flex;
+  gap: 30px;
+}
 .main-traits-title {
+  margin-bottom: 10px;
   font-size: 14px;
   letter-spacing: 0.42px;
   text-transform: uppercase;
@@ -146,9 +170,17 @@ body {
 .work {
   margin-bottom: 94px;
 }
+.work-list {
+  display: flex;
+  gap: 30px;
+}
 .team {
   padding: 94px 0;
   background-color: #F5F4FA;
+}
+.team-list {
+  display: flex;
+  gap: 30px;
 }
 .work-title,
 .team-title {
@@ -205,6 +237,11 @@ body {
 .hero-project-type {
   color: var(--add-color);
 }
+.hero-sort-list {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
 .hero-sort-button {
   margin-bottom: 50px;
   font-family: inherit;
@@ -220,9 +257,15 @@ body {
   background-color: var(--accent-color);
   cursor: pointer;
 }
+.hero-project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 .hero-project-item {
   margin-bottom: 30px;
   padding-bottom: 20px;
+  border: 1px solid #EEE;
 }
 .hero-project-title {
   margin-top: 20px;
