@@ -147,10 +147,7 @@ body {
   cursor: pointer;
 }
 .main-traits {
-  margin: 94px 0;
-}
-.traits-hidden-title {
-  display: none;
+  padding: 94px 0;
 }
 .main-traits-list {
   display: flex;
@@ -168,7 +165,7 @@ body {
   letter-spacing: 0.42px;
 }
 .work {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 .work-list {
   display: flex;
@@ -201,7 +198,7 @@ body {
   font-size: 16px;
   letter-spacing: 0.48px;
 }
-.address-item:nth-child(1) {
+.address {
   margin-top: 20px;
 }
 .address-item:nth-child(n+2) {
@@ -241,9 +238,10 @@ body {
   display: flex;
   gap: 8px;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .hero-sort-button {
-  margin-bottom: 50px;
+  
   font-family: inherit;
   font-weight: 500;
   color: var(--main-color);
@@ -263,8 +261,6 @@ body {
   gap: 30px;
 }
 .hero-project-item {
-  margin-bottom: 30px;
-  padding-bottom: 20px;
   border: 1px solid #EEE;
 }
 .hero-project-title {
