@@ -276,13 +276,11 @@ body {
   padding: 20px 24px;
 }
 .hero-project-title {
-  margin-top: 20px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 1.08px;
 }
 .hero-project-type {
-  margin-bottom: 20px;
   line-height: 1.87;
   letter-spacing: 0.48px;
 }
