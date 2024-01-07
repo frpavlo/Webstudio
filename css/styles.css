@@ -55,10 +55,6 @@ body {
   margin: 0 auto;
   width: 1200px;
 }
-.hero-studio {
-  padding: 200px 0;
-  background-color: var(--back-color);
-}
 .list {
   list-style: none;
 }
@@ -118,6 +114,12 @@ body {
 }
 .header-contacts-link {
   color: var(--add-color);
+}
+.hero-studio {
+  padding: 200px 0;
+  background-image: url(../images/bg_img.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .main-title {
   margin-bottom: 30px;
@@ -207,7 +209,9 @@ body {
   gap: 30px;
 }
 .team-item {
+  border-radius: 0px 0px 4px 4px;
   background-color: #FFF;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 .work-title,
 .team-title {
@@ -286,6 +290,7 @@ body {
 }
 .hero-sort-button:hover,
 .hero-sort-button:focus {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
   color: #fff;
   background-color: var(--accent-color);
   cursor: pointer;
@@ -298,6 +303,11 @@ body {
 .hero-project-item {
   border: 1px solid #eee;
   flex-basis: calc((100% - 2 * 30px)/3);
+}
+.hero-project-item:hover, 
+.hero-project-item:focus {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
 }
 .project-box {
   padding: 20px 24px;
