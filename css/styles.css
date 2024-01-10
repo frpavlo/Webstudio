@@ -117,9 +117,10 @@ body {
 }
 .hero-studio {
   padding: 200px 0;
-  background-image: url(../images/bg_img.jpg);
+  background-image: linear-gradient(to left, #2F303A66, #2F303A66), url(../images/bg_img.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 .main-title {
   margin-bottom: 30px;
