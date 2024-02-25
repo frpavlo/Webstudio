@@ -67,7 +67,7 @@
 						<br />
 						вашого бізнесу
 					</h1>
-					<button type="button" class="main-button">Замовити послугу</button>
+					<button type="button" class="main-button" data-modal-open>Замовити послугу</button>
 				</div>
 			</section>
 			<section class="main-traits">
@@ -101,15 +101,15 @@
 					<ul class="work-list list">
 						<li class="work-item">
 							<img src="./images/work_img1.jpg" alt="someone coding" class="work-img" />
-							<p class="work-img-title">ДЕСКТОПНІ ДОДАТКИ</p>
+							<h3 class="work-img-title">ДЕСКТОПНІ ДОДАТКИ</h3>
 						</li>
 						<li class="work-item">
 							<img src="./images/work_img2.jpg" alt="someone looking at a phone" class="work-img" />
-							<p class="work-img-title">МОБІЛЬНІ ДОДАТКИ</p>
+							<h3 class="work-img-title">МОБІЛЬНІ ДОДАТКИ</h3>
 						</li>
 						<li class="work-item">
 							<img src="./images/work_img3.jpg" alt="someone drawing on a tablet" class="work-img" />
-							<p class="work-img-title">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
+							<h3 class="work-img-title">ДИЗАЙНЕРСЬКІ РІШЕННЯ</h3>
 						</li>
 					</ul>
 				</div>
@@ -375,5 +375,54 @@
 				</div>
 			</div>
 		</footer>
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal-order">
+				<button class="modal-close-btn" data-modal-close>
+					<svg width="11" height="11" class="modal-close-icon">
+						<use xlink:href="./images/symbol-defs.svg#icon-cross"></use>
+					</svg>
+				</button>
+				<h2 class="modal-order-title">Залиште свої дані, ми вам передзвонимо</h2>
+				<form action="" class="modal-order-form">
+					<label for="" class="modal-order-label">
+						Ім'я
+						<input type="text" name="name" class="modal-order-input" />
+						<svg width="12" height="12" class="modal-order-icon">
+							<use xlink:href="./images/symbol-defs.svg#icon-user"></use>
+						</svg>
+					</label>
+					<label for="" class="modal-order-label">
+						Телефон
+						<input type="tel" name="phone-number" class="modal-order-input" required />
+						<svg width="13" height="13" class="modal-order-icon">
+							<use xlink:href="./images/symbol-defs.svg#icon-phone"></use>
+						</svg>
+					</label>
+					<label for="" class="modal-order-label">
+						Пошта
+						<input type="email" name="email" class="modal-order-input" required />
+						<svg width="15" height="12" class="modal-order-icon">
+							<use xlink:href="./images/symbol-defs.svg#icon-modal-envelope"></use>
+						</svg>
+					</label>
+					<label for="" class="modal-order-label">
+						Коментар
+						<textarea
+							name="comment"
+							placeholder="Введіть текст"
+							class="modal-order-comment"
+							maxlength="400"
+							required
+						></textarea>
+					</label>
+					<label for="" class="order-terms">
+						<input type="checkbox" name="terms-agree" class="order-terms-input" required />
+						Погоджуюся з розсилкою та приймаю <a href="" class="terms-link"> Умови договору</a>
+					</label>
+					<button class="order-send-btn" type="submit">Відправити</button>
+				</form>
+			</div>
+		</div>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
