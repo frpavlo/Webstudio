@@ -477,13 +477,12 @@ body {
 }
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-	background-color: var(--accent-color);
 	cursor: pointer;
 }
 
 .modal-close-btn:hover .modal-close-icon,
 .modal-close-btn:focus .modal-close-icon {
-	fill: #fff;
+	fill: var(--accent-color);
 }
 .modal-order-title {
 	margin-bottom: 12px;
@@ -500,18 +499,20 @@ body {
 	letter-spacing: 0.01em;
 	color: var(--add-color);
 }
+.modal-order-label:not(:first-child) {
+	margin-top: 10px;
+}
 .modal-order-input {
 	margin-top: 4px;
 	width: 100%;
 	padding: 13px 0 13px 28px;
 	border: rgba(33, 33, 33, 0.2) solid 1px;
 	border-radius: 4px;
-	margin-bottom: 10px;
 }
 .modal-order-icon {
 	position: absolute;
 	left: 12px;
-	bottom: 24px;
+	bottom: 14px;
 }
 .modal-order-comment {
 	margin-top: 4px;
@@ -521,7 +522,6 @@ body {
 	resize: none;
 	border: rgba(33, 33, 33, 0.2) solid 1px;
 	border-radius: 4px;
-	margin-bottom: 20px;
 }
 .modal-order-comment::placeholder {
 	font-size: 12px;
@@ -529,7 +529,9 @@ body {
 	color: var(--add-color);
 }
 .order-terms {
+	margin-top: 20px;
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	gap: 8px;
 	font-size: 14px;
