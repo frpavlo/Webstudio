@@ -312,6 +312,7 @@ body {
 }
 .footer .container {
 	display: flex;
+	gap: 80px;
 }
 .address {
 	margin-top: 20px;
@@ -337,6 +338,7 @@ body {
 	border-radius: 50%;
 }
 .social-title {
+	font-size: 14px;
 	color: #fff;
 }
 .social-list {
@@ -361,6 +363,48 @@ body {
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
 	fill: #fff;
+}
+.mail-title {
+		font-size: 14px;
+		letter-spacing: 0.03em;
+		color: #fff;
+		margin-bottom: 20px;
+}
+.mail-form {
+	display: flex;
+	gap: 12px;
+}
+.mail-input {
+	border: rgba(255, 255, 255, 0.3) solid 1px;
+	border-radius: 4px;
+	background-color: transparent;
+	padding: 15px 0 15px 15px;
+	width: 360px;
+}
+.mail-input::placeholder {
+		font-size: 16px;
+		line-height: 1.25;
+		letter-spacing: 0.03em;
+		color: rgba(255, 255, 255, 0.6);
+}
+.mail-sub-btn {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 1.87;
+		letter-spacing: 0.06em;
+	text-align: center;
+	color: #fff;
+	background-color: var(--accent-color);
+}
+.mail-sub-btn::after {
+	content: "";
+	width: 24px;
+	height: 24px;
+	background-image: url(../images/send_icon.svg);
+	display: inline-block;
 }
 .hero-portfolio {
 	padding-top: 94px;
@@ -503,6 +547,7 @@ body {
 	margin-top: 10px;
 }
 .modal-order-input {
+	outline: none;
 	margin-top: 4px;
 	width: 100%;
 	padding: 13px 0 13px 28px;
@@ -515,6 +560,7 @@ body {
 	bottom: 14px;
 }
 .modal-order-comment {
+	outline: none;
 	margin-top: 4px;
 	padding: 12px 16px;
 	width: 100%;
@@ -565,4 +611,13 @@ body {
 .order-send-btn:hover, .order-send-btn:focus {
 	opacity: 0.8;
 	cursor: pointer;
+}
+.modal-order-label:focus-within {
+	fill: var(--accent-color);
+}
+.modal-order-input:focus {
+	border-color: var(--accent-color);
+}
+.modal-order-comment:focus {
+	border-color: var(--accent-color);
 }
