@@ -29,7 +29,7 @@
 				<nav class="nav">
 					<ul class="nav-list list">
 						<li class="nav-item">
-							<a href="./index.html" class="nav-link link">Студія</a>
+							<a href="./index.html" class="nav-link link current">Студія</a>
 						</li>
 						<li class="nav-item">
 							<a href="./portfolio.html" class="nav-link link">Портфоліо</a>
@@ -393,7 +393,7 @@
 				<form action="" class="modal-order-form">
 					<label for="" class="modal-order-label">
 						Ім'я
-						<input type="text" name="name" class="modal-order-input" />
+						<input type="text" name="name" class="modal-order-input" required />
 						<svg width="12" height="12" class="modal-order-icon">
 							<use xlink:href="./images/symbol-defs.svg#icon-user"></use>
 						</svg>
@@ -414,13 +414,7 @@
 					</label>
 					<label for="" class="modal-order-label">
 						Коментар
-						<textarea
-							name="comment"
-							placeholder="Введіть текст"
-							class="modal-order-comment"
-							maxlength="400"
-							required
-						></textarea>
+						<textarea name="comment" placeholder="Введіть текст" class="modal-order-comment" maxlength="400"></textarea>
 					</label>
 					<label for="" class="order-terms">
 						<input type="checkbox" name="terms-agree" class="order-terms-input" required />
