@@ -642,7 +642,7 @@ body {
 .modal-order-label:focus-within {
 	fill: var(--accent-color);
 }
-.modal-order-input:focus {
+.modal-order-input:focus, .modal-order-input:hover {
 	border-color: var(--accent-color);
 }
 .modal-order-comment:focus {
