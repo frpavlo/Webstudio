@@ -391,33 +391,34 @@
 				</button>
 				<h2 class="modal-order-title">Залиште свої дані, ми вам передзвонимо</h2>
 				<form action="" class="modal-order-form">
-					<label for="" class="modal-order-label">
+					<label class="modal-order-label">
 						Ім'я
 						<input type="text" name="name" class="modal-order-input" required />
 						<svg width="12" height="12" class="modal-order-icon">
 							<use xlink:href="./images/symbol-defs.svg#icon-user"></use>
 						</svg>
 					</label>
-					<label for="" class="modal-order-label">
+					<label class="modal-order-label">
 						Телефон
 						<input type="tel" name="phone-number" class="modal-order-input" required />
 						<svg width="13" height="13" class="modal-order-icon">
 							<use xlink:href="./images/symbol-defs.svg#icon-phone"></use>
 						</svg>
 					</label>
-					<label for="" class="modal-order-label">
+					<label class="modal-order-label">
 						Пошта
 						<input type="email" name="email" class="modal-order-input" required />
 						<svg width="15" height="12" class="modal-order-icon">
 							<use xlink:href="./images/symbol-defs.svg#icon-modal-envelope"></use>
 						</svg>
 					</label>
-					<label for="" class="modal-order-label">
+					<label class="modal-order-label">
 						Коментар
 						<textarea name="comment" placeholder="Введіть текст" class="modal-order-comment" maxlength="400"></textarea>
 					</label>
-					<label for="" class="order-terms">
-						<input type="checkbox" name="terms-agree" class="order-terms-input" required />
+					<label class="order-terms">
+						<input type="checkbox" name="terms-agree" class="order-terms-input visually-hidden" required />
+						<div class="custom-order-terms-input"></div>
 						Погоджуюся з розсилкою та приймаю
 						<a href="" class="terms-link">Умови договору</a>
 					</label>
