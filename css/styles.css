@@ -506,7 +506,7 @@ body {
 		letter-spacing: 0.03em;
 		color: #fff;
 }
-.project-image-box:hover .project-overlay {
+.project-link:hover .project-overlay {
 	transform: translateY(0);
 }
 .hero-project-item:hover,
